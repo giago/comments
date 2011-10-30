@@ -1,0 +1,56 @@
+<html>
+<head>
+<script type="text/javascript">
+var SERVICES_URL_PREFIX = "http://localhost:8888/crappyCommentsServices?action=HasCommentsForUrl&url=http://crappycomments.appspot.com/";
+
+var handler = function handleResponseAndUpdateIcon(resp) {
+	log(resp.hasComment);
+}
+
+function checkComments() {
+	callServices(SERVICES_URL_PREFIX, handler);
+}
+
+function callServices(url, handler) {
+	console.log("Calling services with url : " + url);
+	try {
+		var xhr = new XMLHttpRequest();
+		var abortTimerId = window.setTimeout(function() { xhr.abort(); }, 60000);
+		  
+		xhr.onreadystatechange = function() {
+		  	if (xhr.readyState != 4) { return; }
+			handleSuccess(xhr.responseText, handler);
+		}; 
+		xhr.open("POST", url , true);
+		xhr.send(null);
+	} catch (e) {
+	    console.error("Exception while calling the services");
+	    window.clearTimeout(abortTimerId);
+	}
+}
+	
+function sendVoteForComment(url, id, vote) {
+	console.log("Call to voteComment id : " + id);
+	callServices(getServiceUrlForVote("voteComment", id, vote), 
+		function(response) {
+		showInfoMessageWithTimeout("Thanks for voting!");
+			getCommentsForUrl(url);
+		});
+}
+	
+	
+function handleSuccess(response, handler) {
+	if(response == null && response == ""){
+		return;
+	}
+	try {
+  		console.log("response from server : " + response);
+  		var resp = JSON.parse(response);
+		handler(resp);
+	} catch (e) {
+		console.error("Exception while parsing the response");
+	}
+}
+</script>
+</head>
+</html>

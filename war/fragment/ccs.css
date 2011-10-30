@@ -1,0 +1,32 @@
+<style>
+body, table td, select {
+  font-family: Arial Unicode MS, Arial, sans-serif;
+  font-size: small;
+}
+pre {
+  font-family: "courier new", courier;
+  font-size: small;
+}
+body {
+  color: black;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  background: #fff;
+  direction: ltr;
+}
+
+.commentContainer { width: 500px; margin: 20px 0px 4px 0px; position: relative; text-align: left;}
+.messages {}
+.css-menu { position: absolute; top: 3; left: 10;}
+.css-popularMenu { position: absolute; top: 3; right: 10;}
+
+.commentTitle { color: #76879b; margin: 0px 0px 5px 0px; font-size: 10px; font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif; width:100%;}
+.commentTitle a { font-weight:bold; cursor: pointer;}
+
+.negative { font-weight:bold; color:red; }
+.positive { font-weight:bold; color:green; }
+
+.commentText {font-size: 12px; font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif; width:100%;}
+.commentText a { font-weight:bold; cursor: pointer;}
+</style>

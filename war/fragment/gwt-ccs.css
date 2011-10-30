@@ -1,0 +1,32 @@
+<style>
+body, table td, select { font-family: Arial Unicode MS, Arial, sans-serif; font-size: small; }
+body { color: black; margin: 0px; border: 0px; padding: 0px; background: #fff; direction: ltr; }
+pre { font-family: "courier new", courier; font-size: small; }
+.adSense { width:500px; height:20; }
+.ccs-menu { position: absolute; top: 3; left: 10;}
+.ccs-popularMenu { position: absolute; top: 3; right: 10;}
+.ccs-commentContainer { width: 500px; margin: 20px 0px 4px 0px; position: relative; text-align: left;}
+.ccs-commentTitle { color: #76879b; margin: 0px 0px 5px 0px; font-size: 10px; font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif; width:100%;}
+.ccs-commentTitle a { font-weight:bold; cursor: pointer;}
+.ccs-commentDate { width: 400px; font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif; font-size: 10px;}
+.ccs-commentNegative { font-weight:bold; color:red; cursor:pointer; font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif; font-size: 10px;}
+.ccs-commentPositive { font-weight:bold; color:green; cursor:pointer; font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif; font-size: 10px; maring-right:10px;}
+.ccs-commentText {font-size: 12px; font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif; width:100%; margin:0 0 5 0;}
+.ccs-commentUrl {font-size: 12px; font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif; width:100%; margin:0 0 0 0;}
+.ccs-commentBottomToolbarButton {cursor:pointer; color:blue; margin:0px 10px 0px 0px; float:right; text-align:center; text-decoration: underline; width:50px;}
+.ccs-commentTopToolbar{height:10px; width:510px;}
+.ccs-limitedTextAreaContainer{}
+.ccs-limitedTextArea{width:500px; height:55px; border: 1px solid #cccccc;}
+.ccs-limitedTextAreaCounter{font-weight:bold; color:green; float:right;}
+.ccs-commentInputContainer{margin-top:10px; font-weight:bold; color:#cccccc; width:500px}
+.ccs-commentUrlInputContainer{width:500px}
+.ccs-commentInputButton{color:#ccccc; text-color:#00000; border:1px solid #cccccc;cursor:pointer;float:left;}
+.ccs-urlLabel{}
+.ccs-urlLabelInputField{width:500px; border: 1px solid #cccccc;}
+.ccs-urlTextAreaInputField{width:500px; height:55px; border: 1px solid #cccccc;}
+.ccs-seeComment{color:#999999;margin-left:20px;float:right;text-decoration:none;}
+.ccs-seeComment:visited{color:#999999;text-decoration:none;}
+.ccs-imageContainer{text-align:center;width:100%;}
+.ccs-signInLabel{float:left;margin-left:10px;cursor:pointer;}
+.ccs-signInInput{border:1px solid #CCCCCC;height:20px;margin-left:5px;margin-top:2px}
+</style>

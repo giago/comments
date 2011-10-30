@@ -1,0 +1,13 @@
+<html><head><style type="text/css">#iframe { width: 525px; height: 550px; border: 0px; margin: 20px 0px 0px 0px; }</style></head>
+<body><div id="iframecontainer" align="center">Loading frame, please wait...</div></body>
+<script type="text/javascript">
+function entryPoint() {
+	chrome.tabs.getSelected(null, function(tab) { 
+		showIframe("http://crappycomments.appspot.com/extension.jsp?url=" + tab.url); 
+	}); 
+}
+function showIframe(url) {
+	document.getElementById("iframecontainer").innerHTML = "<iframe id=\"iframe\" src=\"" + url + "\" frameborder=\"0\"></iframe>"; 
+}
+entryPoint();
+</script></html>

@@ -1,0 +1,17 @@
+<!-- Indices written at Sat, 20 Feb 2010 00:52:30 UTC -->
+
+<datastore-indexes>
+
+    <!-- Used 5 times in query history -->
+    <datastore-index kind="Comment" ancestor="false" source="auto">
+        <property name="url" direction="asc"/>
+        <property name="createdDate" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 5 times in query history -->
+    <datastore-index kind="Comment" ancestor="false" source="auto">
+        <property name="url" direction="asc"/>
+        <property name="votes" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>
